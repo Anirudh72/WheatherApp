@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="wraper">
+
+    <h1>WEATHER APP</h1>
+
+    <div class="click-button">
+        <button data-yourbtn  >your wether</button>
+        <button  data-seartchbtn  >search  weather</button>
+    </div>
+
+
+    <div class="wether-container">
+
+    <!-- grant location section -->
+  
+    <div class="grant-container">
+        <img src="location.png" height="50px" width="50px">
+        <h1>Grant location Access</h1>
+        <p>Allow access To Get weather information</p>
+         <button  data-grantbtn>Grant Access</button>
+
+    </div>
+
+
+    <!-- seartch container -->
+
+    <div class="form-container" data-searchform>
+        <input  type="input" placeholder="search for city..."  class="inputcss"  data-search id="input">
+        <button  type="submit" class="btncss" onclick="fetchsearchinfo()" btn>
+            <img src="seartch icons.png" height="20px" width="20px">
+        </button>
+    </div>
+
+
+    <!-- loading container -->
+
+      <div class="loading-container">
+        <img src="ZKZg.gif" height="100px" width="100px">
+        <p>loading</p>
+
+      </div>
+
+
+
+
+
+    <!-- specification section -->
+      <div class="discription-container">
+       
+        <div class="name-flag">
+             <p data-name></p>
+              <img data-flag>
+        </div>
+
+
+        <p  class="text"  data-climate></p>
+
+        <img  class="img-cloud"  data-climateimage>
+
+        <p    class="text-2" data-indegree></p>
+
+        
+
+       <div class="threebox-container">
+
+           <div class="box">
+
+            <img src="windspeed.jpg" height="100px" width="50px">
+            <h1>windspeed</h1>
+            <p class="text-3"  data-windspeed></p>
+           </div>
+
+
+           <div class="box">
+
+            <img src="humidity.jpg" height="100px" width="50px">
+            <h1>humidity</h1>
+            <p class="text-3"  data-humidity></p>
+
+          </div>
+
+
+          <div  class="box">
+            
+            <img src="cloude 2.0.jpg " height="100px" width="50px">
+            <h1>clouds</h1>
+            <p   class="text-3"  data-cloude></p>
+
+          </div>
+
+
+       </div>
+
+
+
+
+    </div>
+
+
+    </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
